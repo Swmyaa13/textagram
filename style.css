@@ -1,0 +1,293 @@
+/* -------COLOR- #db7093 -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins' , sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+.wrapper {
+    background: #fff;
+    width: 400px;
+    border-radius: 18px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+
+}
+
+/*-----------------SIGN UP AND LOGIN PAGE------------------*/
+/*fc5a8d*/
+
+.form {
+    padding: 20px 35px;
+}
+.form header {
+    font-family: 'Reggae One', cursive;
+    /*color: #645452;*/
+    color: #de5285;
+    font-size: 33px;
+    font-weight: 550;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+.form form {
+    margin: 20px 0;
+}
+.form form .errorText {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px solid #f5c6cb;
+    display: none;
+}
+.form form .details {
+    display: flex;
+}
+.form form .details .fields:first-child {
+    margin-right: 10px;
+}
+.form form .details .fields:last-child {
+    margin-left: 10px;
+}
+.form form .fields {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form form .fields i {
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 55%;
+    cursor: pointer;
+}
+.form form .fields i.active::before {
+    content: "\f070";
+    color: #333;
+}
+.form form .input input {
+    height: 35px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
+}
+.form form .image input {
+    font-size: 16px;
+}
+.form form .button input {
+    margin-top: 10px;
+    height: 45px;
+    border: none;
+    background: #de5285;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form .link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.form .link a {
+    color: #333;
+}
+.form .link a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------INBOX PAGE------------------ */
+
+.users {
+    padding: 20px 25px;
+}
+.users header ,
+.userList a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+:is(.users, .userList) .detail {
+    color: #000;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+:is( .users , .userList) span {
+    font-size: 18px;
+    font-weight: 540;
+}
+:is(.users, .userList) p {
+    font-size: 16px;
+    margin-top: 4px;
+}
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+:is(.users, .userList) .contents {
+    display: flex;
+    align-items: center;
+}
+.users header .contents img {
+    height: 50px;
+    width: 50px;
+}
+.users header .logout {
+    font-size: 17px;
+    color: #fff;
+    background: #de5285;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+    
+
+.userList {
+    max-height: 280px;
+    overflow-y: auto;
+}
+/*----HIDING SCROLLBAR OF CHAT BOX AND USERLIST----*/
+:is(.userList , .chatBox)::-webkit-scrollbar {
+    width: 0px;
+}
+
+.userList a {
+    margin-bottom: 12px;
+    padding-right: 13px;
+    padding-bottom: 10px;
+    border-bottom-color: #f1f1f1;
+}
+.userList a:last-child {
+    margin-bottom: 0px;
+}
+.userList a .contents img {
+    height: 40px;
+    width: 40px;
+}
+.userList a .contents p {
+    color: #67676a;
+}
+.userList a .status {
+    /*color: #03C03C;*/
+    color: #de5285;
+    font-size: 10px;
+}
+/* -----STATUS DOT IN PHP----- */
+.userList a .status.offline {
+    color: #ccc;;
+}
+
+/* ----------------- CONVERSATIONS -----------------*/
+
+.chatArea header {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+}
+.chatArea header .backArrow {
+    font-size: 18px;
+    color: #333;
+}
+.chatArea header img {
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+.chatArea header .contents .details span {
+    font-size: 18px;
+    font-weight: 540;
+}
+.chatArea header .contents .details p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.chatBox {
+    overflow-y: auto;
+    height: 450px;
+    padding: 10px 30px 20px 20px;
+    background: #f7f7f7;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+                inset 0 -32px 32px -32px rgb(0 0 0 /5%);
+}
+.chatBox .text {
+    margin: 15px 0;
+}
+.chatBox .text p {
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chatBox .outgoing {
+    display: flex;
+}
+.outgoing .details {
+    margin-left: auto;
+    max-width: calc(100% - 100px);
+}
+.outgoing .details p {
+    background: #de5285;
+    color: #fff;
+    border-radius: 15px 15px 0 15px;
+}
+.chatBox .incoming {
+    display: flex;
+    align-items: center;
+}
+.chatBox .incoming img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.incoming .details {
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 100px);
+}
+.incoming .details p {
+    background: #fff;
+    border-radius: 15px 15px 15px 0 ;
+    color: #333;
+}
+/*-----TYPING AREA-----*/
+.chatArea .typingArea {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.typingArea input {
+    height: 45px;
+    width: calc(100% -  58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.typingArea button {
+    background: #de5285;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    width: 55px;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+}

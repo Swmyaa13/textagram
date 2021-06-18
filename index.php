@@ -1,0 +1,47 @@
+
+<?php include_once "header.php"?>
+<body>
+    <div class="wrapper">
+        <section class="form signup">
+            <header>Textagram</header>
+            <form action="#" enctype="multipart/form-data" method="POST">
+                <div class="errorText">This is an error message!</div>
+
+                <!-- ------NAME DETAILS------ -->
+                <div class="details">
+                    <div class="fields input">
+                        <label>First Name</label>
+                        <input type="text" name="fname" placeholder="First Name" required>                        
+                    </div>
+                    <div class="fields input">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" placeholder="Last Name" required>                        
+                    </div>
+                </div>
+
+                <!-- ------OTHER DETAILS------- -->
+                <div class="fields input">
+                    <label>Email Address</label>
+                    <input type="text" name="email" placeholder="Enter your email" required>                        
+                </div>
+                <div class="fields input">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter your password" required>  
+                    <i class="fas fa-eye"></i>                                             
+                </div>
+                <div class="fields image">
+                    <label>Profile Photo</label>
+                    <input type="file" name="image" required>                       
+                </div>
+                <div class="fields button">
+                    <input type="submit" value="Continue to Chat">                        
+                </div>
+                <div class="link">Have an Account? <a href="login.php">Login</a> </div>
+
+            </form>
+        </section>
+    </div>
+    <script src="javascript/password.js"></script>
+    <script src="javascript/signup.js"></script>
+</body>
+</html>
